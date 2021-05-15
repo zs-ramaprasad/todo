@@ -1,0 +1,12 @@
+  
+[Unit]
+Description=Todo Service
+
+[Service]
+Environment=REDIS_HOST=redis-endpoint
+ExecStart=/bin/node /home/ubuntu/todo/server.js
+SyslogIdentifier =todo
+
+[Install]
+WantedBy=multi-user.target
+© 2021 GitHub, Inc.
